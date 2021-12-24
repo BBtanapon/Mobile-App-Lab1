@@ -19,33 +19,50 @@ class MyHomePage extends StatelessWidget {
             NetPro(),
             myname(),
             birthday(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Container(
-                    padding: EdgeInsets.only(left: 8, right: 8),
-                    child: Divider(
-                      color: Colors.black,
-                      thickness: 5,
-                    ),
-                  ),
-                ),
-                Text("About Me"),
-                Expanded(
-                  child: Container(
-                    padding: EdgeInsets.only(left: 8, right: 8),
-                    child: Divider(
-                      color: Colors.black,
-                      thickness: 5,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            AboutMe(),
+            Con()
           ],
         ),
       ),
+    );
+  }
+
+  Row Con() {
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Text(
+        "My name is Mr.Tanapon Amonsakpaisan",
+        style: GoogleFonts.roboto(
+          color: Colors.black,
+        ),
+      ),
+      Text("TEL : 0992310531"),
+    ]);
+  }
+
+  Row AboutMe() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Expanded(
+          child: Container(
+            padding: EdgeInsets.only(left: 8, right: 8),
+            child: Divider(
+              color: Colors.black,
+              thickness: 5,
+            ),
+          ),
+        ),
+        Text("About Me"),
+        Expanded(
+          child: Container(
+            padding: EdgeInsets.only(left: 8, right: 8),
+            child: Divider(
+              color: Colors.black,
+              thickness: 5,
+            ),
+          ),
+        ),
+      ],
     );
   }
 
